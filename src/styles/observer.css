@@ -1,0 +1,24 @@
+.observed {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+  filter: blur(5px);
+}
+
+.fade-up {
+  transform: translateY(50px);
+}
+
+.fade-left {
+  transform: translateX(-50px);
+}
+
+.fade-right {
+  transform: translateX(50px);
+}
+
+.observed.visible {
+  opacity: 1;
+  transform: translate(0);
+  filter: blur(0px);
+}

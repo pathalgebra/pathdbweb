@@ -1,0 +1,43 @@
+{
+    "title": "Pricing Lorem lero lero",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia.",
+    "buttonText": "Get started",
+    "options": [
+        {
+        "title": "Lorem ipsum",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia.",
+        "price": "$1000",
+        "time": "/mes",
+        "caracteristics": [
+            "Lorem ipsum",
+            "Lorem ipsum",
+            "Lorem ipsum"
+        ]
+        }, 
+        {
+        "title": "Lorem ipsum",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia.",
+        "price": "$1500",
+        "time": "/mes",
+        "caracteristics": [
+            "Lorem ipsum",
+            "Lorem ipsum",
+            "Lorem ipsum",
+            "Lorem ipsum"
+        ]
+        },
+        {
+        "title": "Lorem ipsum",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia.",
+        "price": "$5000",
+        "time": "/mes",
+        "caracteristics": [
+            "Lorem ipsum",
+            "Lorem ipsum",
+            "Lorem ipsum",
+            "Lorem ipsum",
+            "Lorem ipsum"
+        ]
+        }
+    ]
+}

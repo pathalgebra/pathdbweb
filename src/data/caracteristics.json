@@ -1,0 +1,27 @@
+{
+    "title": "Lo que nos hace únicos",
+    "content": [
+        {
+            "title": "Lorem1",
+            "description": "Iste accusamus culpa molestiae maiores soluta ullam aperiam rerum obcaecati architecto. Nobis, omnis quas? Officia quod earum.",
+            "icon": "/star.svg"
+        },
+        {
+            "title": "Lorem2",
+            "description": "Iste accusamus culpa molestiae maiores soluta ullam aperiam rerum obcaecati architecto.",
+            "icon": "/star.svg"
+        },
+        {
+            "title": "Lorem3",
+            "description": "Iste accusamus culpa molestiae maiores soluta ullam aperiam rerum obcaecati architecto. Nobis, omnis quas? Officia quod earum. Exercitationem officiis iste explicabo numquam voluptate ratione possimus",
+            "icon": "/star.svg"
+        },
+        {
+            "title": "Lorem4",
+            "description": "Iste accusamus culpa molestiae maiores soluta ullam aperiam rerum obcaecati architecto. Nobis, omnis quas? . Exercitationem officiis iste explicabo numquam voluptate ratione possimus",
+            "icon": "/star.svg"
+        }
+
+    ]
+    
+}

@@ -1,0 +1,23 @@
+{
+    "title": "Casos de uso",
+    "subtitle": "lorem Ipsum",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia.",
+    "examples" : [
+    {
+        "title": "Lorem ipsum",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia.",
+        "icon": "/star.svg"
+    },
+    {
+        "title": "Lorem ipsum",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia.",
+        "icon": "/star.svg"
+    },
+    {
+        "title": "Lorem ipsum",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia.",
+        "icon": "/star.svg"
+    }
+    ],
+    "image": "https://aplicaciones-ai.com/wp-content/uploads/2024/07/introduccion-a-neo4j-uso-y-beneficios-de-las-bases-de-datos-en-grafos.jpg"
+}

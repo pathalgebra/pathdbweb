@@ -1,0 +1,50 @@
+---
+import data from "../data/navbar.json";
+import Logo from "./Logo.astro";
+---
+
+<nav class="w-full border-b-2 p-4 md:p-8 md:px-16 z-50 light:border-2 flex flex-row justify-between items-center bg-transparent mb-20 fixed top-0 transparency dark:border-gray-800 ">
+
+  <a href="/" class="md:text-3xl text-lg font-semibold flex gap-4">
+    <Logo />
+    <button class="hover:cursor-pointer">PathDB</button>
+  </a>
+  <!-- desktop menu-->
+  <ul class="md:flex gap-4 hidden w-fit">
+    {data.map((item) => <li><a class="text-lg " href={item.link}>{item.name}</a></li>)}
+  </ul>
+  <!-- mobile menu -->
+  <div class="relative md:hidden">
+    <button id="menubtn" class=" cursor-pointer"><img class="w-8" src="/menu.svg" alt="menu"/></button>
+    <div id="menu" class="hidden">
+
+        <div class="right-0 top-10 absolute flex gap-4 items-center flex-col text-center  border rounded-md shadow-md p-24 z-50 bg-white dark:bg-gray-900">
+            {data.map((item) => <a class="text-lg underline" href={item.link}>{item.name}</a>)}
+        </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+     document.addEventListener("DOMContentLoaded", () => {
+    const button = document.getElementById("menubtn");
+    const menu = document.getElementById("menu");
+
+    if (button && menu) {
+      button.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    }
+  });
+
+</script>
+
+<style>
+    .fancy{
+       font-family: "DM Serif Text", serif; 
+    }
+    .transparency{
+    backdrop-filter: blur(10px); /* Apply blur on scroll */
+  
+    }
+</style>

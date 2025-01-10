@@ -1,0 +1,18 @@
+{
+"name": "PathDB",
+"image": "/logo.svg",
+"liks": [
+    {
+        "name": "Home",
+        "link": "#"
+    },
+    {
+        "name": "About",
+        "link": "#about"
+    },
+    {
+        "name": "Contact",
+        "link": "#contact"
+    }
+]
+}

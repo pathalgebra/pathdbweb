@@ -1,0 +1,66 @@
+---
+import data from "../data/usecase.json";
+import '../styles/observer.css';
+---
+
+<section class="overflow-hidden py-24 sm:py-32 relative ">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
+    <div
+      class="mx-auto grid gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 "
+    >
+      <div class="lg:pr-8 lg:pt-4 observed fade-left ">
+        <div class="lg:max-w-lg md:max-w-md max-w-[345px] ">
+          <h2 class="text-base/7 font-semibold text-indigo-600">
+            {data.subtitle}
+          </h2>
+          <p
+            class="mt-2 text-wrap text-4xl font-semibold tracking-tight sm:text-5xl"
+          >
+            {data.title}
+          </p>
+          <p class="mt-6 text-lg/8 text-gray-400 ">{data.description}</p>
+          <dl
+            class="mt-10  space-y-8 text-base/7 text-gray-400 lg:max-w-none"
+          >
+            {
+              data.examples.map((item) => (
+                <div class="relative pl-9 flex flex-col gap-2">
+                  <dt class="font-semibold  flex gap-2 ">
+                    <img
+                      src={item.icon}
+                      alt="icon"
+                      aria-hidden="true"
+                      class="w-8 p-1 bg-indigo-600 rounded-full"
+                    />
+                    <span class="light:text-black dark:text-white">
+                      {item.title}
+                    </span>
+                  </dt>
+                  <dd class="inline text-gray-400">{item.description}</dd>
+                </div>
+              ))
+            }
+          </dl>
+        </div>
+      </div>
+      <img
+        src={data.image}
+        alt="Example Image"
+        class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 observed fade-right "
+        width="2432"
+        height="1442"
+      />
+      <div
+        class="sm:hidden md:absolute inset-x-0 -translate-x-40 -translate-y-40 rotate-180 scale-50 -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+        aria-hidden="true"
+      >
+        <div
+          class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+        >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

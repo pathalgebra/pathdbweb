@@ -1,22 +1,74 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <!-- Poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Lobster font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>PathDB</title>
+
+    <!-- Estilos y scrips globales -->
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", serif;
+      }
+      
+    </style>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const observerOptions = {
+          root: null, // Usa el viewport como contenedor
+          rootMargin: "0px",
+          threshold: 0.1, // Activa cuando el 10% del elemento es visible
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Agrega la clase visible cuando el elemento entra en la vista
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target); // Detiene la observación una vez que es visible
+            }
+          });
+        }, observerOptions);
+
+        const elements = document.querySelectorAll(".observed");
+        elements.forEach((el) => observer.observe(el));
+      });
+    </script>
+  </head>
+  <body class="dark:bg-gray-900 dark:text-white">
+    <Navbar />
+    <div class="my-40 opacity-0">.</div>
+    <slot />
+    <Footer < body />
+  </body>
+</html>
