@@ -1,0 +1,22 @@
+{
+    "title":"Looking for answers?",
+    "subtitle": "FAQs",
+    "questions": [
+        {
+            "title": "What is PathDB?",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia."            
+        },        
+        {
+            "title": "Why PathDB?",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia."            
+        },        
+        {
+            "title": "Where PathDB?",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia."            
+        },        
+        {
+            "title": "How PathDB?",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia."            
+        }        
+    ]
+}

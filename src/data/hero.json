@@ -1,6 +1,6 @@
 {
     "title": "PathDB",
-    "subtitle": "a graph database",
+    "subtitle": "Database oriented towards path queries",
     "buttonText": "Get started",
     "buttonLink": "/pathdbweb",
     "secundaryButtonText": "Learn more",
