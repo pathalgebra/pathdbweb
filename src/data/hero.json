@@ -1,6 +1,6 @@
 {
     "title": "PathDB",
-    "subtitle": "a random graph database",
+    "subtitle": "a graph database",
     "buttonText": "Get started",
     "buttonLink": "/pathdbweb",
     "secundaryButtonText": "Learn more",
