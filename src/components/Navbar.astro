@@ -18,8 +18,8 @@ import Logo from "./Logo.astro";
     <button id="menubtn" class=" cursor-pointer"><img class="w-8" src="/pathdbweb/menu.svg" alt="menu"/></button>
     <div id="menu" class="hidden">
 
-        <div class="right-0 top-10 absolute flex gap-4 items-center flex-col text-center  border rounded-md shadow-md p-24 z-50 bg-white dark:bg-gray-900">
-            {data.map((item) => <a class="text-lg underline" href={item.link}>{item.name}</a>)}
+        <div class="right-0 top-10 absolute flex gap-4 items-center flex-col text-center  border dark:border-gray-700 rounded-md  p-24 z-50 bg-white dark:bg-gray-900 shadow-2xl shadow-gray-300/50 dark:shadow-black/50 ">
+            {data.map((item) => <a class="text-lg underline " href={item.link}>{item.name}</a>)}
         </div>
     </div>
   </div>
@@ -34,6 +34,11 @@ import Logo from "./Logo.astro";
       button.addEventListener("click", () => {
         menu.classList.toggle("hidden");
       });
+      document.addEventListener("click", (e) => {
+      if (!menu.contains(e.target) && !button.contains(e.target)) {
+        menu.classList.add("hidden");
+      }
+    });
     }
   });
 
