@@ -1,0 +1,26 @@
+{
+    "cardsinfo": [
+        {
+            "title": "Documentation",
+            "cta": "documentation",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia.",
+            "icon": "/pathdbweb/docs.svg", 
+            "ctalink": "/pathdbweb"
+
+        },
+        {
+            "title": "Lorem2",
+            "cta": "lorem2",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia.",
+            "icon": "/pathdbweb/code.svg",
+            "ctalink": "/pathdbweb"
+        },
+        {
+            "title": "Lorem2",
+            "cta": "lorem2",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia.",
+            "icon": "/pathdbweb/user.svg",
+            "ctalink": "/pathdbweb"
+        }
+    ]
+}

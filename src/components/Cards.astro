@@ -1,0 +1,37 @@
+---
+import data from "../data/cards.json";
+import '../styles/observer.css';
+---
+
+<section class="mx-auto w-full p-8 py-20 md:-mt-20 flex justify-center observed fade-up ">
+  <div
+    class=" grid md:grid-cols-3  content-normal gap-16" 
+  >
+    {
+      data.cardsinfo.map((card) => (
+        <div class="cursor-pointer border p-12 max-w-sm flex-col gap-6  flex rounded-xl hover:shadow-2xl hover:shadow-gray-300/50 dark:hover:shadow-black/50 transition-all dark:border-gray-700 hover:opacity-80 h-full">
+          <div class="flex flex-col gap-2 ">
+            <img src={card.icon} alt={card.title} class="w-16 p-2" />
+            <h5 class="font-semibold text-xl">{card.title}</h5>
+          </div>
+          <p class="text-gray-500 text-lg flex-1" >{card.description}</p>
+          <a href={card.ctalink} class="font-semibold mt-4 hover:text-indigo-500 transition-all flex gap-2 text-md items-center">
+            {card.cta}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6 text-indigo-500"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+      ))
+    }
+  </div>
+</section>
